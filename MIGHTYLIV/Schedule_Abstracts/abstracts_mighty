@@ -1,0 +1,340 @@
+Speaker: Ariana Angjeli, Oakland University
+Title:  LINEARLY MANY FAULTS IN DUAL-CUBE-LIKE NETWORKS 
+Abstract:  
+   ARIANA ANGJELI,EDDIE CHENG AND LASZLO LIPTAK
+The dual cube were introduced as better interconnections network
+than the hypercubes for large scale distributed memory multiprocessors. In
+this talk we introduce a generalization of these networks, called
+dual-cube-like networks, which preserve the basic structure of dual cubes
+and retain many of its topological properties. We investigate structural
+properties of these networks beyond simple measures such as connectivity. We
+prove that if up to kn-(k(k+1))/2 vertices are deleted from dual-cube-like
+n-regular network then the resulting graph will either be connected or will
+have large components and small components having at most k-1 vertices in
+total,and this result is sharp for k%E2%89%A4n. As an application we derive
+additional results such as the cyclic vertex-connectivity and the restricted
+vertex-connectivity of these networks.
+
+==================
+
+Speaker: Deepak Bal, Carnegie Mellon University
+Title: Packing Tree Factors in Random and Pseudo-Random Graphs
+Abstract:  For a fixed graph $H$ with $t$ vertices, an $H$-factor of a graph
+$G$ with $n$ vertices is a collection of vertex disjoint (not necessarily
+induced) copies of $H$ in $G$ covering all vertices of $G$.  We prove that
+certain pseudo-random and random graphs may have almost all of their edges
+covered by a collection of edge disjoint $H$-factors in the case where $H$
+is a tree.
+
+Joint work with Alan Frieze, Michael Krivelevich and Po-Shen Loh. 
+
+=================
+
+Speaker: Arthur Busch, University of Dayton
+Title:  Toughness and Hamiltonicity in k-trees 
+Abstract:  A chordal graph is a $k$-tree if every maximal clique has order
+$k+1$ and every minimal separating set has order $k$.  In this talk we
+improve a theorem of Broesma, Xiong & Yoshimoto on toughness in $k$-trees
+and consider some related corollaries. 
+
+
+==================
+
+Speaker: Steve Butler, Iowa State University
+Title:  Throttling zero forcing propagation speed 
+Abstract:  Zero forcing is a game played on a graph that starts with a
+coloring of the vertices as white and black and at each step any vertex
+colored black with a unique neighbor colored white ``forces'' the color of
+the white vertex to be come black.  In this talk we look at what happens
+when we balance the size of the initial set of vertices colored black and
+the length of time that it takes for all vertices to be colored black.  We
+also give an example that shows it is possible in some graphs to slow down
+the speed of propagation in the graph by choosing larger initial sets.
+Joint work with Michael Young.
+
+
+==================
+
+Speaker: Ye Chen (no affiliation provided)
+Title: r-hued Coloring of K4-minor Free Graphs
+Abstract:  A list assignment $L$ of $G$ is a mapping that assigns every
+vertex $v\in V(G)$ a set $L(v)$ of positive integers. For a given list
+assignment $L$ of $G$, an ($L,r$)-coloring of $G$ is a proper coloring $c$
+such that for any vertex $v$ with degree $d(v)$, $c(v)\in L(v)$ and $v$ is
+adjacent to at least min$\{d(v),r\}$ different colors. The {\it $r$-hued
+chromatic number} of $G$, $\chi_{r}(G)$, is the least integer $k$ such that
+for any $v \in V(G)$ with $L(v) = \{1,2,\cdots,k\}$, $G$ has an
+$(L,r)$-coloring. The {\it $r$-hued list chromatic number} of $G$,
+$\chi_{L,r}(G)$, is the least integer $k$ such that for any $v \in V(G)$ and
+every list assignment $L$ with $|L(v)| = k$, $G$ has an $(L,r)$-coloring.
+Let $K(r)=r+3$ if $2 \le r \le 3$, and  $K(r)=\lfloor 3r/2\rfloor+1$ if
+$r\ge 4$. We proved that if $G$ is a $K_4$-minor free graph, then
+
+(i) $\chi_r(G) \le K(r)$, and the bound can be attained;
+
+(ii) $\chi_{L,r}(G) \le K(r)+1$.
+
+
+===============
+
+Speaker: Zhihong Chen, Butler University
+Title: Eulerian-connected Graphs 
+Abstract:  A graph $G$ is Eulerian-connected if for any $u$ and $v$ in
+$V(G)$, $G$ has a spanning $(u,v)$-trail.
+A graph $G$ is edge-Eulerian-connected if for any $e'$ and $e''$ in $E(G)$,
+$G$ has a spanning $(e',e'')$-trail.
+For an integer $r\ge 0$, a graph is called $r$-Eulerian-connected if for any
+$X\subseteq E(G)$ with $|X|\le r$,
+and for any $u,\ v \in V(G)$, 
+$G$ has a spanning $(u,v)$-trail $T$ such that $X\subseteq E(T)$. The
+$r$-edge-Eulerian-connectivity of a graph can be defined similarly.
+ Let $\theta (r)$ be the minimum value of $k$ such
+that every $k$-edge-connected graph is $r$-Eulerian-connected.
+ Catlin proved that $\theta(0)=4$. In this talk, we shall show that
+$\theta(r)=4$ for $0\le r\le 2$, and $\theta(r)=r+1$ for $r\ge 3$, and show
+ some new results on $r$-edge-Eulerian connectivity. 
+
+===============
+
+Speaker: Ilkyoo Choi, University of Illinois at Urbana-Champaign
+Title:  On Choosability with Separation of Planar Graphs with Forbidden
+Cycles 
+Abstract:  We study choosability with separation which is a constrained
+version of list coloring of graphs. A \emph{$(k,d)$-list assignment} $L$ of
+a graph $G$ is a function that assigns to each vertex $v$ a list $L(v)$ of
+at least $k$ colors and for any adjacent pair $xy$, the lists $L(x)$ and
+$L(y)$ share at most $d$ colors. A graph $G$ is $(k,d)$-choosable if there
+exists an $L$-coloring of $G$ for every $(k,d)$-list assignment $L$. This
+concept is also known as choosability with separation. We prove that planar
+graphs without 4-cycles are $(3,1)$-choosable and that planar graphs without
+5-cycles and 6-cycles are $(3,1)$-choosable. In addition, we give an
+alternative and slightly stronger proof that triangle-free planar graphs are
+$(3,1)$-choosable. 
+
+
+===============
+
+Speaker: John Engbers, University of Notre Dame
+Title:  Extremal $H$-colorings of forests and trees 
+Abstract:  Given a finite graph $H$, an $H$-coloring of a finite, simple
+graph $G$ (or graph homomorphism) is a map from the vertices of $G$ to the
+vertices of $H$ that preserves edge adjacency.  $H$-colorings generalize
+many important graph theoretic notions, such as proper $q$-colorings (via $H
+= K_{q}$) and independent sets (via $H$ as an edge with a loop on one
+endvertex).
+
+Given a family of graphs $\mathcal{G}$ and a graph $H$, which graph(s) in
+$\mathcal{G}$ have the largest number of $H$-colorings?  We present several
+results for the family of $n$-vertex forests and the family of $n$-vertex
+trees.  Numerous open questions remain.
+
+
+================
+
+Speaker: David Galvin, University of Notre Dame
+Title: Twin conventions and graph Stirling numbers 
+Abstract:  Recently Griffiths asked (and answered) the question: in how many
+ways can $n$ sets of twins at a twin convention break into non-empty groups,
+with no group allowed to contain a pair of twins? One approach to this
+problem leads naturally to the notion of a ``graph Stirling number of the
+second kind''. I'll say what we know about these numbers and what we don't,
+and then use them to address Griffith's question with ``twins'' replaced by
+``triplets'', ``quadruplets'', etc. Partly joint work with Do Trong Thanh.
+
+===============
+
+Speaker: Sogol Jahanbekam, University of Illinois at Urbana-Champaign
+Title: Rainbow Spanning Subgraphs in Edge-Colored Complete Graphs 
+Abstract:  For integers $n$ and $t$, let $r(n,t)$ be the maximum number of
+colors in an
+edge-coloring of the complete graph $K_n$ that does not contain $t$
+edge-disjoint rainbow spanning trees.  Let $s(n,t)$ be the maximum number of
+colors in an edge-coloring of $K_n$ containing no rainbow spanning subgraph
+with diameter at most $t$.  We determine r(n,t) for
+$n>2t+\sqrt{6t-\frac{23}{4}}+\frac52$ and for $n=2t$. We also determine
+$s(n,t)$ for all integers $n$ and $t$. 
+This is joint work with Douglas B. West. 
+
+
+
+===============
+
+Speaker: Zeinab Maleki, University of Illinois at Urbana-Champaign
+Title: Some lower bounds for the intersection dimension of graphs
+Abstract:  The {\it intersection dimension} of a graph with respect to a set
+of non-negative integers~$L$ is the small number~$l$ for which there is an
+assignment on the vertices to subsets $A_v \subseteq \{1,\dots, l\}$, such
+that every two vertices $u,v$ are adjacent if and only if $|A_u \cap A_v|\in
+L$.
+The {\it bipartite intersection dimension} is defined similarly when the
+conditions are considered only for the vertices in different parts. The {\it
+absolut dimension} of a graph $G$ is the minimum intersection dimension of
+$G$ over all sets $L$. Finding graphs with large (bipartite) absolute
+dimension would have important consequences in the complexity theory.
+In this talk, we present some lower bounds for the (bipartite) intersection
+dimension of a graph with respect to various types $L$ in terms of the
+minimum rank of graph.
+(This is a joint work with Behnaz Omoomi)
+
+
+
+
+===============
+
+
+Speaker: Terry McKee, Wright State University
+Title: Weighty Characterizations of Two Graph Classes.
+Abstract: Defining the weight of a complete subgraph to be the number of
+maxcliques that contain it, I give a stylish characterization of strongly
+chordal graphs in terms of their clique graphs, and a related-but-quirky
+characterization of trivially perfect graphs. 
+
+
+====================
+
+Speaker: Darren Parker, Grand Valley State University
+Title: Multidesigns for Graph-Triples of Order 6 
+Abstract:  We call $T=(G_1,G_2,G_3)$ a \emph{graph-triple of order t} if the
+$G_i$ are pairwise non-isomorphic graphs on $t$ non-isolated vertices whose
+edges can be combined to form $K_t$.  If $m \geq t$, we say $T$
+\emph{divides} $K_m$ if $E(K_m)$ can be partitioned into copies of the
+graphs in $T$ with each $G_i$ used at least once, and we call such a
+partition a \emph{$T$-multidecomposition}.  In this talk, we determine
+$T$-multidecompositions of complete graphs, where $T$ is a graph-triple of
+order 6. Moreover, we determine maximum multipackings and minimum
+multicoverings when $K_m$ does not admit a multidecomposition. 
+
+====================
+
+Speaker: Nicholas Peterson, The Ohio State University
+Title:  On Random $k$-Out Graphs with Preferential Attachment 
+Abstract:  We generalize a model of Hansen and Jaworski for random mappings
+which exhibit preferential attachment to a mapping $[n]\mapsto[n]^k$ - or,
+equivalently, a random digraph $M_{n,k}^{\alpha}$ with labeled arcs and
+uniform out-degree $k$. Each vertex starts with some weight $\alpha>0$; each
+vertex chooses $k$ images, one at a time in a fixed order, with probability
+of choosing a given vertex proportional to its current weight; and the
+weight of the chosen vertex increases by 1 before the next decision is made.
+The limiting case $M_{n,k}^{\infty}$ is a uniformly random $k$-out digraph
+with labeled arcs.
+
+We establish a limiting distribution for the vertex connectivity of the
+graph obtained from $M_{n,k}^{\alpha}$ by ignoring loops, multiple edges,
+and arc directions. We also seek to answer the question: how fast must
+$\alpha$ grow (relative to $n$) in order to make the difference between
+$M_{n,k}^{\alpha}$ and $M_{n,k}^{\infty}$ asymptotically negligible?
+Measuring with the total variation distance, we establish
+$\alpha=\Theta(\sqrt{n})$ as a sharp threshold for this behavior.
+
+This is a joint work with Boris Pittel. 
+
+====================
+
+Speaker: Gregory Puleo, University of Illinois at Urbana-Champaign
+
+Title:  Tuza's Conjecture for Graphs of Max Average Degree Less than 7 
+
+Abstract:  Suppose I wish to make a graph $G$ triangle-free by removing a
+small
+number of edges.  An obvious obstruction is the presence of a large
+set of edge-disjoint triangles, since I must remove one edge from each
+triangle. On the other hand, removing all the edges in a maximal set
+of edge-disjoint triangles clearly makes $G$ triangle-free.
+\emph{Tuza's conjecture} states that the worst-case number of edges
+that must be removed is somewhere between these extremes: if $\tau(G)$
+is the number of edges that must be removed to make $G$ triangle-free
+and $\nu(G)$ is the maximum number of edge-disjoint triangles in $G$,
+then Tuza's conjecture states that $\tau(G) \leq 2\nu(G)$. Using the
+method of discharging, we show that Tuza's conjecture holds whenever
+the maximum average degree $\mathrm{Mad}(G) < 7$. This subsumes
+several earlier results and represents the first application of
+discharging to this problem. 
+
+
+
+================
+
+Speaker: Michael Santana, University of Illinois at Urbana-Champaign
+Title:  Pairs of forbidden subgraphs for pancyclicity
+Abstract:  The Matthew-Sumner Conjecture claims that every 4-connected,
+claw-free graph contains a hamiltonian cycle.  This conjecture has provided
+the impetus for a great deal of research into structural properties of
+claw-free graphs, and in particular, pancyclicity.  While it is known that
+forbidding the claw is an insufficient condition to imply pancyclicity of
+4-connected graphs, we look to forbid more substructures to obtain this end.
+In this talk we will present a characterization of the pairs of forbidden
+subgraphs that imply pancyclicity for 4-connected graphs.  This extends a
+result of Gould, {\L}uczak, and Pfender for 3-connected graphs.  (Joint work
+with James Carraher, Michael Ferrara, and Timothy Morris) 
+
+====================
+
+Speaker: Benjamin Stucky, University of Oklahoma
+Title:  An Algorithmic Approach to Raising the Lower Bound of $R(5,5)$ 
+Abstract:  The primary focus of this talk is to explore some basic methods
+for pushing the lower bound on the classical Ramsey number $R(5,5)$ from
+$43$ to $44$.  Interestingly enough, we can phrase the problem in the
+following way: Is it possible to have an arrangement of $43$ people in a
+room such that no $5$ are \textit{either} mutual acquaintances \textit{or}
+mutual strangers (a question that perhaps gave rise to the informal
+description of this problem as the ``Party Problem'').  First, I explore the
+simple brute force method involving testing $2^{903}$ configurations of
+$2$-colorings of the edges of $K_{43}$, the complete graph on $43$ vertices.
+Next I discuss some simplifications to this approach, including attempting
+to exploit symmetry in configurations to eliminate graphs to test.  Finally,
+I discuss the approach involving extending an existing solution on one less
+vertex, drastically eliminating the number of graphs to be searched to
+$2^{42}$. Having been unsuccessful in using my algorithm to raise the lower
+bound of $R(5,5)$, I discuss some rationalizations for my ``failure'' and an
+argument for $R(5,5)=43$. I will start with a description and history of the
+problem, continue with a description of my approach, and finish by outlining
+my results. 
+
+
+
+
+====================
+
+Speaker: Keke Wang, West Viriginia University
+Title: Cycle chains and Hamiltonian 3-connected claw-free graphs
+Abstract: We develop a cycle chain method to prove that every
+3-edge-connected graph G is supereulerian if every 3-edge cut of G
+intersects with short cycles in G. This is applied to the study of
+Hamiltonian claw-free graphs, and provide a unified treatment with short
+proofs for several former results. New sufficient conditions for Hamiltonian
+claw-free graphs are also obtained. 
+
+====================
+
+
+
+Speaker: Minquan Zhan, Millersville University
+Title: The Discharging Method and 3-Connected Essentially 10-Connected Line
+Graphs 
+Abstract: We use the discharging method to prove that every 3-connected,
+essentially 10-connected line graph is hamiltonian connected. 
+
+
+
+====================
+
+
+Speaker: Meng Zhang, West Virginia University
+Title: Supereulerian Graphs and The Petersen Graph 
+Abstract:  A graph G is supereulerian if G has a spanning eulerian subgraph.
+Boesch et al proposed the problem of characterizing supereulerian graphs. In
+this talk I will present any 3-edge-connected graph with at most 11 edgecuts
+of size 3 is supereulerian if and only if it cannot be contractible to the
+Petersen graph. 
+
+====================
+
+
+Speaker: Xiangqian "Joe" Zhou, Wright State University
+Title: Unavoidable minors of large 4-connected bicircular matroids 
+Abstract:  The bicircular matroid of a graph G is the matroid with ground
+set E(G) and a subset is independent iff each connected component of the
+subgraph spanned by that set contains at most one cycle.   In this talk, we
+present a recent result on unavoidable minors of large 4-connected
+bicircular matroids. This is joint work with Daniel Slilaty, Deborah Chun,
+and Tyler Moss.  

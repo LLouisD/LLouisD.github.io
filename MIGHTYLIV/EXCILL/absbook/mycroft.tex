@@ -1,0 +1,50 @@
+\speaker{Richard Mycroft}{r.mycroft@bham.ac.uk}{Birmingham University}
+\title{Perfect Matchings in Hypergraphs}
+\endtitle
+Any graph $G$ on $n$ vertices with $\delta(G) \geq n/2$ admits a perfect
+matching, and the proof of this fact is elementary. However, it wasn't
+until 2006 that R\"odl, Ruci\'nski and Szemer\'edi proved an analogue of
+this theorem for uniform hypergraphs, showing that any sufficiently
+large $k$-graph $H$ on $n$ vertices with minimum codegree $\delta(H)
+\geq n/2 - C$ admits a perfect matching (they gave the exact value of
+$C$, which depends on $n$). This condition is easily shown to be best
+possible by a simple lattice-based construction, and since then the
+focus of attention has largely moved to vertex degree conditions (for
+instance the vertex degree which forces a perfect matching remains an
+important open problem).
+
+Returning to codegree conditions, our main theorem shows that any
+$k$-graph $H$ on $n$ vertices with $\delta(H) \geq n/k-o(n)$ must either
+contain a perfect matching or be close to a graph from one of two
+families of constructions, `space barriers' and `divisibility barriers'.
+Members of the first family have minimum codegree at most $n/k$, so the
+stronger assumption that $\delta(H) \geq n/k +o(n)$ eliminates this
+possibility. The latter family of constructions includes the extremal
+example for the theorem of R\"odl, Ruci\'nski and Szemer\'edi mentioned
+above; its members are characterised by the sizes of intersections of
+edges with the parts of some partition $\mathcal{P}$ of $V(H)$ being
+members of some fixed sublattice of $\mathbb{Z}^d$, where $d$ is the
+number of parts of $\mathcal{P}$. In fact this theorem holds even under
+the weaker assumption that `many' $(k-1)$-tuples have at least this
+codegree, rather than all.
+
+In this talk, I will explain this result in more detail, and describe a
+number of consequential results which follow from it. These include the
+following:
+\begin{itemize}
+\item A multipartite version of the Hajnal-Szemer\'edi theorem, proving
+a conjecture of Fischer (except for a known family of counter-examples).
+\item The minimum codegree threshold which guarantees a perfect
+tetrahedron packing in a 4-graph, answering a question of Pikhurko.
+\item An exact characterisation of 3-graphs with $\delta(H) \geq n/3 +
+o(n)$ with no perfect matching: such $k$-graphs must admit a partition
+of $V(H)$ into parts $A$ and $B$ so that every edge intersects $A$ in an
+even number of vertices. Broadly similar results for $k$-graphs with $k
+\geq 4$ can also be obtained, although the naive generalisation of the
+3-graph case fails.
+\item New results on the complexity of the perfect matching decision
+problem for $k$-graphs of large minimum codegree, a problem considered
+by Karpi\'nski, Ruci\'nski and Szymanska.
+\end{itemize}
+I will also outline potential avenues for further development of this
+approach.

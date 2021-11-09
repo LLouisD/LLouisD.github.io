@@ -1,0 +1,200 @@
+
+\def\pen{\penalty10000}
+
+%% NAME EMAIL AFFILIATION
+\def\speaker#1#2#3{\hbox\bgroup\vrule
+  \vbox\bgroup\hrule\pen\vskip0.5mm\hrule\pen\smallskip\begin{center}{\Large #1}\pen\vskip1pt%
+  {\tt #2}\pen\smallskip%
+  \write\spk{\string\obsline {#1}{}{\the\count0}}\pen
+% \label{#1}
+%  \write\spk{\string\obsline {#1}{}{#1}}\pen
+\\ #3  
+  }
+
+%% NAME EMAIL AFFILIATION
+\def\speakerposter#1#2#3{\hbox\bgroup\vrule
+  \vbox\bgroup\hrule\pen\vskip0.5mm\hrule\pen\smallskip\begin{center}{\Large #1}\pen\vskip1pt%
+  {\tt #2}\pen\smallskip%
+%  \write\spk{\string\obsline {#1}{}{\the\count0}}\pen
+% \label{#1}
+%  \write\spk{\string\obsline {#1}{}{#1}}\pen
+\\ #3  
+  }
+
+\def\titlebegin{\medskip}
+\def\titleline#1{{\\\Large #1}\pen}
+\def\titleend{\smallskip}
+\def\title#1{\titlebegin\titleline{\Large #1}\titleend\write\obs{\string\obsline {#1}{}{\the\count0}}}
+\def\titleposter#1{\titlebegin\titleline{\Large #1}\titleend}
+%\def\title#1{\titlebegin\titleline{\Large #1}\titleend\write\obs{\string\obsline {#1}{}{\currfilename}}}
+
+\def\source#1{{\\(#1)}\pen}
+
+\def\endtitle{\end{center}\smallskip\hrule\egroup\vrule\egroup\pen\smallskip\bgroup\setcounter{Defnum}{0}}
+
+
+%%%%% Some Macros - leave them as they are  %%%%%
+%\def\speaker#1#2{%
+%\begin{spktitle}\pen%
+%\centerline{\Large \textbf{#1}}\pen%
+%\vskip 1pt\pen%
+%\centerline{\tt #2}\nopagebreak%
+%\write\spk {\string\obsline {#1}{}{\the\count0}}%
+%}                                                                          
+%\def\title#1{%
+%\begin{center}%
+%{\Large\nopagebreak \textbf{#1}}%
+%\end{center}%
+%\write\obs {\string\obsline {#1}{}{\the\count0}}%
+%}
+%\def\author#1{\nopagebreak\smallskip\centerline{Presented paper by #1}\nopagebreak}                                                       
+%\def\source#1{\nopagebreak\centerline{(#1)}\nopagebreak}
+%\def\endtitle{\end{spktitle}\par\setcounter{Defnum}{0}\nopagebreak}
+
+% Nejaka makra pro definovani definic a podobne
+\newcounter{Defnum}
+\newenvironment{definition}{\stepcounter{Defnum}\par\textbf{Definition \arabic{Defnum}.}} {}
+\newenvironment{theorem}{\stepcounter{Defnum}\par\textbf{Theorem \arabic{Defnum}.}\it}{}
+\newenvironment{lemma}{\stepcounter{Defnum}\par\textbf{Lemma \arabic{Defnum}.}\it}{}
+\newenvironment{observation}{\stepcounter{Defnum}\par\textbf{Observation \arabic{Defnum}.}\it}{}
+\newenvironment{corollary}{\stepcounter{Defnum}\par\textbf{Corollary \arabic{Defnum}.}\it}{}
+\newenvironment{conjecture}{\stepcounter{Defnum}\par\textbf{Conjecture \arabic{Defnum}.}\it}{}
+\newenvironment{proof}{\par\textbf{Proof}}{ \rule{1pt}{0pt}   \hfill $\square$ \\}
+\newenvironment{proposition}{\stepcounter{Defnum}\par\textbf{Proposition \arabic{Defnum}.}\it}{}
+
+%% Pro seznam participantu
+\def\part#1#2#3#4{%
+\leftline{\textbf{#1}}\penalty5000
+\leftline{\hskip1cm #2}\penalty5000
+\leftline{\hskip1cm #3}\penalty5000
+\leftline{\hskip1cm\tt #4}\medskip}
+
+
+% Dela sekce v jednotlivych kouskach sbornicku
+\def\subsection#1{\par Not good idea. \smallskip}
+\def\section#1{\par\medskip\centerline{\bf #1}\smallskip}
+
+%% Pro formatovani odstavcu
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5 em}
+
+
+
+%% Makro pro vkladani prispevku
+\def\pripevek#1{
+%	\label{#1.tex}
+	\input{#1}\vskip 3em
+}
+
+% Makro pro uvedeni prispevku
+% pouziti: \prispevek{nazev}{autori}
+
+\def\prispevek #1#2{%
+\clearpage
+%  \par\penalty-200\bigskip\bigskip\bigskip
+  \vbox{%
+  \bgroup
+    \parindent=0pt
+    \spaceskip=.3333em
+    \rightskip=3em plus 1fil
+    \leftskip=3em plus 1fil
+    \parfillskip=0em
+    {\LARGE {\bf #1} \par}%Large
+    \ifx @#2@\else 
+    \penalty10000%
+    \medskip
+    {\Large {\em #2} \par}%large
+    \fi
+  \egroup
+  }%
+  \penalty10000%
+  %\leavevmode
+  \medskip
+  \penalty10000%
+  \bigskip
+%  \doobsahu{#1}{#2}%
+  \penalty10000%
+}
+
+% Zapise do pomocneho souboru fikane makro, 
+% cimz zpusobi vytisteni prislusneho radku v obsahu.
+% pouziti: \doobsahu{nazev}{autori}
+
+\def\doobsahu #1#2{%
+  \write\obs {\string\obsline {#1}{}{\the\count0}}%
+  \write\spk {\string\obsline {#2}{}{\the\count0}}%
+  \penalty 10000%
+}
+
+\def\prispevekvarianta #1#2{%
+  \section*{#1}%
+  \penalty10000%
+  \medskip
+  \centerline{\it #2}%
+  \penalty10000%
+  \medskip
+  \bigskip
+  \penalty10000%
+% \doobsahu{#1}{#2}%
+}
+
+\def\participant#1#2#3#4{%
+#1 #2 \url{#3} #4  \vskip -2pt
+}
+
+% Makro, ktere vyrobi jednu radku obsahu,
+% je obsazeno v automaticky vygenerovanem souboru \jobname.obs
+% pouziti: \obsline{nazev}{autori}{cislo stranky}
+
+\def\obsline #1#2#3{%
+\ifx @#2@\else #2: \fi
+  #1 \leaders\hbox to 1em{\hfil.\hfil}\hfill\quad #3\par 
+}
+
+% Makro, ktere vyrobi cely obsah.
+% Pouzit na zacatku, pred prvnim prispevkem.
+% (Slo by upravit i pro pouziti na konci.)
+
+\def\Contents{%
+  \newpage
+%  \immediate\closeout\obs
+  \centerline {\LARGE {\bf Index of Talk Titles}}%Large
+  \bigskip \bigskip
+  \bgroup
+    \parindent=-\parindent
+    \spaceskip=.3333em
+    \rightskip=5em plus 1fil
+    \leftskip=-\parindent plus 0fil
+    \parfillskip=-5em
+    \input \jobname.obs
+  \egroup
+  \bigskip\bigskip
+  \immediate\openout\obs=\jobname.obs
+}
+
+\def\ContentsSpeakers{%
+  \newpage
+%  \immediate\closeout\spk
+  \centerline {\LARGE {\bf Index of Speakers}}%Large
+  \bigskip \bigskip
+  \bgroup
+    \parindent=-\parindent
+    \spaceskip=.3333em
+    \rightskip=5em plus 1fil
+    \leftskip=-\parindent plus 0fil
+    \parfillskip=-5em
+    \input \jobname.spk
+  \egroup
+  \bigskip\bigskip
+  \immediate\openout\spk=\jobname.spk
+}
+
+% Makro pro zalomeni radku v nadpisu (\\ z nejakeho duvodu nechodi).
+
+\def\CR{\penalty-10000}
+
+% Promenna pro pomocny soubor.
+
+\newwrite\obs
+\newwrite\spk  % speakers
+%\immediate\openout\obs=\jobname.obs
